@@ -8,11 +8,11 @@ spec:
   chart:
     spec:
       chart: nginx
+      version: "13.2.7"  # classic chart version
       sourceRef:
         kind: HelmRepository
         name: bitnami
         namespace: flux-system
-      version: "*"
   interval: 1m
   values:
     service:
