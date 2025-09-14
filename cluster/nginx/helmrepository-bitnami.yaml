@@ -6,4 +6,3 @@ metadata:
 spec:
   url: https://charts.bitnami.com/bitnami
   interval: 1m
-  type: helm
