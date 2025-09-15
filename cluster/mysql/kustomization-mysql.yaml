@@ -14,6 +14,3 @@ spec:
     provider: sops
     secretRef:
       name: sops-age-key
-  resources:
-    - helmrelease-mysql.yaml
-    - mysql-secret.enc.yaml
