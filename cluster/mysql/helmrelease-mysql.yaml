@@ -15,5 +15,11 @@ spec:
         namespace: flux-system
   interval: 1m
   values:
-    service:
-      type: NodePort
+    auth:
+      rootPassword: my-root-pass       # root password
+      username: myuser                 # new user
+      password: mypass123              # password for new user
+      database: mydb                   # database created for that user
+    primary:
+      persistence:
+        enabled: false 
