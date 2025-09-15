@@ -16,10 +16,7 @@ spec:
   interval: 1m
   values:
     auth:
-      rootPassword: my-root-pass       # root password
-      username: myuser                 # new user
-      password: mypass123              # password for new user
-      database: mydb                   # database created for that user
+      existingSecret: mysql-auth
     primary:
       persistence:
         enabled: false 
