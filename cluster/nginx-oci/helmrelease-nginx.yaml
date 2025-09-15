@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: nginx-oci
+  namespace: nginx-oci-ns
+spec:
+  releaseName: nginx-oci
+  chart:
+    spec:
+      chart: nginx
+      version: "21.1.23"
+      sourceRef:
+        kind: HelmRepository
+        name: bitnami-oci
+        namespace: flux-system
+  interval: 1m
+  values:
+    service:
+      type: NodePort
