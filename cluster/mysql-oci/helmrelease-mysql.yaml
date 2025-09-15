@@ -20,5 +20,3 @@ spec:
     primary:
       persistence:
         enabled: false 
-    secretRef:
-      name: sops-age-key
